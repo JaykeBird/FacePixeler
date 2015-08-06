@@ -50,6 +50,14 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Emgu.CV, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>EmguCV\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>EmguCV\Emgu.Util.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -62,6 +70,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaceDetection.cs" />
+    <Compile Include="ImageProcessor.cs" />
+    <Compile Include="IntelAgreement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntelAgreement.Designer.cs">
+      <DependentUpon>IntelAgreement.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +89,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="IntelAgreement.resx">
+      <DependentUpon>IntelAgreement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -93,7 +118,77 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="EmguCV\Emgu.CV.dll" />
+    <Content Include="EmguCV\Emgu.Util.dll" />
+    <Content Include="EmguCV\x64\cudart64_65.dll" />
+    <Content Include="EmguCV\x64\cufft64_65.dll" />
+    <Content Include="EmguCV\x64\cvextern.dll" />
+    <Content Include="EmguCV\x64\cvextern_test.exe" />
+    <Content Include="EmguCV\x64\nppc64_65.dll" />
+    <Content Include="EmguCV\x64\nppi64_65.dll" />
+    <Content Include="EmguCV\x64\npps64_65.dll" />
+    <Content Include="EmguCV\x64\OpenCL.dll" />
+    <Content Include="EmguCV\x64\opencv_calib3d2410.dll" />
+    <Content Include="EmguCV\x64\opencv_contrib2410.dll" />
+    <Content Include="EmguCV\x64\opencv_core2410.dll" />
+    <Content Include="EmguCV\x64\opencv_features2d2410.dll" />
+    <Content Include="EmguCV\x64\opencv_flann2410.dll" />
+    <Content Include="EmguCV\x64\opencv_gpu2410.dll" />
+    <Content Include="EmguCV\x64\opencv_highgui2410.dll" />
+    <Content Include="EmguCV\x64\opencv_imgproc2410.dll" />
+    <Content Include="EmguCV\x64\opencv_legacy2410.dll" />
+    <Content Include="EmguCV\x64\opencv_ml2410.dll" />
+    <Content Include="EmguCV\x64\opencv_nonfree2410.dll" />
+    <Content Include="EmguCV\x64\opencv_objdetect2410.dll" />
+    <Content Include="EmguCV\x64\opencv_photo2410.dll" />
+    <Content Include="EmguCV\x64\opencv_stitching2410.dll" />
+    <Content Include="EmguCV\x64\opencv_superres2410.dll" />
+    <Content Include="EmguCV\x64\opencv_video2410.dll" />
+    <Content Include="EmguCV\x64\opencv_videostab2410.dll" />
+    <Content Include="EmguCV\x86\cudart32_65.dll" />
+    <Content Include="EmguCV\x86\cufft32_65.dll" />
+    <Content Include="EmguCV\x86\cvextern.dll" />
+    <Content Include="EmguCV\x86\nppc32_65.dll" />
+    <Content Include="EmguCV\x86\nppi32_65.dll" />
+    <Content Include="EmguCV\x86\npps32_65.dll" />
+    <Content Include="EmguCV\x86\OpenCL.dll" />
+    <Content Include="EmguCV\x86\opencv_calib3d2410.dll" />
+    <Content Include="EmguCV\x86\opencv_contrib2410.dll" />
+    <Content Include="EmguCV\x86\opencv_core2410.dll" />
+    <Content Include="EmguCV\x86\opencv_features2d2410.dll" />
+    <Content Include="EmguCV\x86\opencv_flann2410.dll" />
+    <Content Include="EmguCV\x86\opencv_gpu2410.dll" />
+    <Content Include="EmguCV\x86\opencv_highgui2410.dll" />
+    <Content Include="EmguCV\x86\opencv_imgproc2410.dll" />
+    <Content Include="EmguCV\x86\opencv_legacy2410.dll" />
+    <Content Include="EmguCV\x86\opencv_ml2410.dll" />
+    <Content Include="EmguCV\x86\opencv_nonfree2410.dll" />
+    <Content Include="EmguCV\x86\opencv_objdetect2410.dll" />
+    <Content Include="EmguCV\x86\opencv_photo2410.dll" />
+    <Content Include="EmguCV\x86\opencv_stitching2410.dll" />
+    <Content Include="EmguCV\x86\opencv_superres2410.dll" />
+    <Content Include="EmguCV\x86\opencv_video2410.dll" />
+    <Content Include="EmguCV\x86\opencv_videostab2410.dll" />
+    <Content Include="haarcascade_frontalface_default.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IntelLicenseAgreement.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>IF EXIST "$(TargetDir)$(PlatformName)\" (
+ECHO Assuming EmguCV tools for $(PlatformName) already exist at output directory
+) ELSE (
+C:\WINDOWS\System32\xcopy /I /Y "$(ProjectDir)EmguCV\$(PlatformName)" "$(TargetDir)$(PlatformName)"
+)</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
