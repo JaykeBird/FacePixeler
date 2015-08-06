@@ -41,4 +41,4 @@ After you clone this repository on your computer, there's one more step you have
 
 ## About me
 
-I am Jacob R. Huempfner. I am the one that wrote this program, using tools from OpenCV and EmguCV. You can find me on Twitter as [@JaykeBird](http://twitter.com/JaykeBird).
+I am Jacob R. Huempfner. I am a C#, Visual Basic, and Java developer, and I'm continuing to learn more and more! You can find me on Twitter as [@JaykeBird](http://twitter.com/JaykeBird).
