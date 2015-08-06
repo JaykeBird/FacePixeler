@@ -43,7 +43,7 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(416, 348);
-            this.textBox1.TabIndex = 0;
+            this.textBox1.TabIndex = 1;
             // 
             // button1
             // 
@@ -51,7 +51,7 @@
             this.button1.Location = new System.Drawing.Point(12, 366);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
+            this.button1.TabIndex = 0;
             this.button1.Text = "Close";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -64,7 +64,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(454, 0);
+            this.MinimumSize = new System.Drawing.Size(454, 38);
             this.Name = "IntelAgreement";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;

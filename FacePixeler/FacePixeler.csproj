@@ -119,57 +119,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="EmguCV\Emgu.CV.dll" />
-    <Content Include="EmguCV\Emgu.Util.dll" />
-    <Content Include="EmguCV\x64\cudart64_65.dll" />
-    <Content Include="EmguCV\x64\cufft64_65.dll" />
-    <Content Include="EmguCV\x64\cvextern.dll" />
-    <Content Include="EmguCV\x64\cvextern_test.exe" />
-    <Content Include="EmguCV\x64\nppc64_65.dll" />
-    <Content Include="EmguCV\x64\nppi64_65.dll" />
-    <Content Include="EmguCV\x64\npps64_65.dll" />
-    <Content Include="EmguCV\x64\OpenCL.dll" />
-    <Content Include="EmguCV\x64\opencv_calib3d2410.dll" />
-    <Content Include="EmguCV\x64\opencv_contrib2410.dll" />
-    <Content Include="EmguCV\x64\opencv_core2410.dll" />
-    <Content Include="EmguCV\x64\opencv_features2d2410.dll" />
-    <Content Include="EmguCV\x64\opencv_flann2410.dll" />
-    <Content Include="EmguCV\x64\opencv_gpu2410.dll" />
-    <Content Include="EmguCV\x64\opencv_highgui2410.dll" />
-    <Content Include="EmguCV\x64\opencv_imgproc2410.dll" />
-    <Content Include="EmguCV\x64\opencv_legacy2410.dll" />
-    <Content Include="EmguCV\x64\opencv_ml2410.dll" />
-    <Content Include="EmguCV\x64\opencv_nonfree2410.dll" />
-    <Content Include="EmguCV\x64\opencv_objdetect2410.dll" />
-    <Content Include="EmguCV\x64\opencv_photo2410.dll" />
-    <Content Include="EmguCV\x64\opencv_stitching2410.dll" />
-    <Content Include="EmguCV\x64\opencv_superres2410.dll" />
-    <Content Include="EmguCV\x64\opencv_video2410.dll" />
-    <Content Include="EmguCV\x64\opencv_videostab2410.dll" />
-    <Content Include="EmguCV\x86\cudart32_65.dll" />
-    <Content Include="EmguCV\x86\cufft32_65.dll" />
-    <Content Include="EmguCV\x86\cvextern.dll" />
-    <Content Include="EmguCV\x86\nppc32_65.dll" />
-    <Content Include="EmguCV\x86\nppi32_65.dll" />
-    <Content Include="EmguCV\x86\npps32_65.dll" />
-    <Content Include="EmguCV\x86\OpenCL.dll" />
-    <Content Include="EmguCV\x86\opencv_calib3d2410.dll" />
-    <Content Include="EmguCV\x86\opencv_contrib2410.dll" />
-    <Content Include="EmguCV\x86\opencv_core2410.dll" />
-    <Content Include="EmguCV\x86\opencv_features2d2410.dll" />
-    <Content Include="EmguCV\x86\opencv_flann2410.dll" />
-    <Content Include="EmguCV\x86\opencv_gpu2410.dll" />
-    <Content Include="EmguCV\x86\opencv_highgui2410.dll" />
-    <Content Include="EmguCV\x86\opencv_imgproc2410.dll" />
-    <Content Include="EmguCV\x86\opencv_legacy2410.dll" />
-    <Content Include="EmguCV\x86\opencv_ml2410.dll" />
-    <Content Include="EmguCV\x86\opencv_nonfree2410.dll" />
-    <Content Include="EmguCV\x86\opencv_objdetect2410.dll" />
-    <Content Include="EmguCV\x86\opencv_photo2410.dll" />
-    <Content Include="EmguCV\x86\opencv_stitching2410.dll" />
-    <Content Include="EmguCV\x86\opencv_superres2410.dll" />
-    <Content Include="EmguCV\x86\opencv_video2410.dll" />
-    <Content Include="EmguCV\x86\opencv_videostab2410.dll" />
     <Content Include="haarcascade_frontalface_default.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
