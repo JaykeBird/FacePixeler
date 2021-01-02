@@ -15,7 +15,7 @@ Also includes code licensed under the Intel OpenCV License Agreement. Check the 
 
 After you clone this repository on your computer, there's one more step you have to take: this code is missing the EmguCV files needed to run the program. The files were too big to fit into this repository, so here's what to do.
 
-1. Download the .zip file [from my OneDrive](http://1drv.ms/1hkvON9).
+1. Download the .zip file [from my OneDrive](https://1drv.ms/u/s!AnYp1YFqE6kPgYNpMe9oBZl8f1QfhA?e=xl1bEa).
 2. Extract the EmguCV folder somewhere (such as your desktop). This folder contains all of the EmguCV DLLs.
 3. Go into the [FacePixeler project folder](FacePixeler) (the one that has the .csproj file and all the code files, not the other one) and move the EmguCV folder there.
    - Your end result should look something like [this image](http://imgur.com/keyVDk6).
